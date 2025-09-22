@@ -1,0 +1,20 @@
+{
+  "lastUpdated": "2025-09-22T20:02:15.943Z",
+  "timestamp": 1758571335943,
+  "sources": [
+    "locations",
+    "timeseries",
+    "funnel-default",
+    "funnel-global",
+    "config"
+  ],
+  "totalSources": 5,
+  "successfulSources": 5,
+  "savedFiles": [
+    "locations.json",
+    "timeseries.json",
+    "funnel-default.json",
+    "funnel-global.json",
+    "config.json"
+  ]
+}

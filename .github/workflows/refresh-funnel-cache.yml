@@ -1,0 +1,59 @@
+name: Auto-refresh Funnel data cache
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # Daily at 4 AM UTC (different from power-law and deals to avoid conflicts)
+  workflow_dispatch:     # Manual trigger button
+  push:
+    branches: [ main ]   # Also refresh on code pushes
+    paths: [ 'fetch-funnel-data.js', 'package.json' ]  # Only trigger when fetch script or package changes
+
+jobs:
+  update-funnel-cache:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Fetch fresh funnel data
+        run: node fetch-funnel-data.js
+      
+      - name: Commit updated cache
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Show what files exist
+          echo "=== Files in funnel cache directory ==="
+          ls -la public/cached-data/
+          
+          # Show git status before adding
+          echo "=== Git status before adding ==="
+          git status
+          
+          # Add all files in the cache directory
+          echo "=== Adding files ==="
+          git add -f public/cached-data/
+          
+          # Show what's staged
+          echo "=== Staged changes ==="
+          git diff --staged --name-only
+          
+          # Force commit all files (even if git thinks nothing changed)
+          echo "=== Committing changes ==="
+          git commit -m "🔄 Auto-update funnel data cache [$(date +'%Y-%m-%d %H:%M:%S UTC')]" --allow-empty
+          
+          # Push the changes
+          echo "=== Pushing to GitHub ==="
+          git push

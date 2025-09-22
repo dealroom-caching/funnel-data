@@ -1,0 +1,16 @@
+{
+  "name": "funnel-data",
+  "version": "1.0.0",
+  "description": "Automated cache for funnel data from Google Sheets JSON endpoints",
+  "type": "module",
+  "scripts": {
+    "fetch-funnel-data": "node fetch-funnel-data.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dealroom-caching/funnel-data.git"
+  },
+  "author": "Kjeld",
+  "license": "MIT",
+  "homepage": "https://github.com/dealroom-caching/funnel-data#readme"
+}
