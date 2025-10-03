@@ -661,8 +661,8 @@
       "#6D98BA"
     ],
     [
-      "Q2 Data 2025",
-      "total_capital_vc_q2_2025",
+      "Q3 Data 2025",
+      "total_capital_vc_q3_2025",
       "Total Venture Capital",
       "",
       "Not mature, not outside tech, founded after 1990",
@@ -672,8 +672,8 @@
       ""
     ],
     [
-      "Q2 Data 2025",
-      "startup_capital_vc_q2_2025",
+      "Q3 Data 2025",
+      "startup_capital_vc_q3_2025",
       "Startup Capital",
       "<$15M rounds",
       "Not mature, not outside tech, founded after 1990",
@@ -683,8 +683,8 @@
       ""
     ],
     [
-      "Q2 Data 2025",
-      "breakout_capital_vc_q2_2025",
+      "Q3 Data 2025",
+      "breakout_capital_vc_q3_2025",
       "Breakout Capital",
       "<$15-100M rounds",
       "Not mature, not outside tech, founded after 1990",
@@ -694,8 +694,8 @@
       ""
     ],
     [
-      "Q2 Data 2025",
-      "scaleup_capital_vc_q2_2025",
+      "Q3 Data 2025",
+      "scaleup_capital_vc_q3_2025",
       "Scaleup Capital",
       ">$100M rounds",
       "Not mature, not outside tech, founded after 1990",
@@ -705,8 +705,8 @@
       ""
     ],
     [
-      "Q2 Data 2025",
-      "total_deals_q2_2025",
+      "Q3 Data 2025",
+      "total_deals_q3_2025",
       "Total number of rounds",
       "",
       "",
@@ -716,8 +716,8 @@
       ""
     ],
     [
-      "Q2 Data 2025",
-      "new_unicorns_q1_q2_2025",
+      "Q3 Data 2025",
+      "new_unicorns_q1_q3_2025",
       "New Unicorns YTD",
       "",
       "Newly minted unicorns since January 2025",
@@ -727,9 +727,9 @@
       ""
     ],
     [
-      "Q2 Data 2025",
-      "total_investment_growth_percent_q2_2025",
-      "Q2 2025 vs Q2 2024 VC Growth",
+      "Q3 Data 2025",
+      "total_investment_growth_percent_q3_2025",
+      "Q3 2025 vs Q3 2024 VC Growth",
       "",
       "",
       "",
@@ -738,9 +738,9 @@
       ""
     ],
     [
-      "Q2 Data 2025",
-      "total_deals_growth_percent_q2_2025",
-      "Q2 2025 vs Q2 2024 Round Number Growth",
+      "Q3 Data 2025",
+      "total_deals_growth_percent_q3_2025",
+      "Q3 2025 vs Q3 2024 Round Number Growth",
       "",
       "",
       "",
@@ -749,8 +749,8 @@
       ""
     ]
   ],
-  "lastUpdated": "2025-10-02T04:15:27.550Z",
-  "timestamp": 1759378527550,
+  "lastUpdated": "2025-10-03T04:15:16.918Z",
+  "timestamp": 1759464916918,
   "source": "Google Sheets - config",
   "url": "https://docs.google.com/spreadsheets/d/1Ewhi3YCL-dUWZ3YrHpsmWt4goza-5c1FbDyfDcw26lw/gviz/tq?tqx=out:json&gid=940884547",
   "rowCount": 67
